@@ -1,8 +1,8 @@
 #BT
 ifeq ($(BOARD_HAVE_BLUETOOTH_QCOM),true)
 # BT Related Test app & Tools
-PRODUCT_PACKAGES_DEBUG += gatt_tool_qti_internal
-PRODUCT_PACKAGES_DEBUG += l2test_ertm
+PRODUCT_PACKAGES_ENG += gatt_tool_qti_internal
+PRODUCT_PACKAGES_ENG += l2test_ertm
 
 ifneq ($(TARGET_BOARD_TYPE),auto)
 # Set supported Bluetooth profiles to enabled
@@ -48,9 +48,9 @@ ifeq ($(BOARD_HAS_BT_XPAN), true)
 PRODUCT_PACKAGES += Xpan
 PRODUCT_PACKAGES += privapp-permission-xpan.xml
 endif #XPAN
-PRODUCT_PACKAGES += ChannelSoundingTestApp
-PRODUCT_PACKAGES += com.android.bluetooth.channelsoundingtestapp.xml
-PRODUCT_PACKAGES += BtVS
+PRODUCT_PACKAGES_ENG += ChannelSoundingTestApp
+PRODUCT_PACKAGES_ENG += com.android.bluetooth.channelsoundingtestapp.xml
+PRODUCT_PACKAGES_ENG += BtVS
 endif #TARGET_HAS_LOW_RAM
 
 endif #TARGET_BOARD_TYPE
