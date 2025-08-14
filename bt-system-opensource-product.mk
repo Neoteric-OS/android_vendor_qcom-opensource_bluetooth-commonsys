@@ -18,7 +18,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.profile.opp.enabled=true \
     bluetooth.profile.pbap.server.enabled=true \
     bluetooth.profile.bas.client.enabled=true \
-    bluetooth.device_id.vendor_id=0x001D \
+    bluetooth.device_id.vendor_id=0x001D
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     bluetooth.profile.sap.server.enabled=true \
