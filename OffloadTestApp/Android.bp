@@ -10,7 +10,7 @@ android_app {
        "src/SocketServerqabt.java",
        "src/GattServerqabt.java",
     ],
-    certificate: ":com.android.bluetooth.certificate",
+    certificate: "bluetooth",
     privileged: true,
     required: ["privapp-permission-offload.xml"],
 
